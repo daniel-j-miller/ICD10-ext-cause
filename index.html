@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<style>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+</style>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <script>
+        $(document).ready(function() {
+        $('#example').DataTable( {
+            "ajax": 'ext_cause.txt'
+        } );
+    } );
+  </script>
+  <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Description</th>
+                <th>Traffic?</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
